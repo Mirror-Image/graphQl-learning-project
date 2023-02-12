@@ -1,1 +1,0 @@
-export { useCustomer } from './useCustomer'

@@ -1,7 +1,7 @@
-import {useCustomer} from "./hooks/useCustomer";
+import {useCustomerCreate} from "./hooks/useCustomerCreate";
 
 export const Customer = () => {
-  const { values, handleChange, onSubmit, data } = useCustomer();
+  const { formData, handleChange, onSubmit, data } = useCustomerCreate();
 
   return (
     <div>
@@ -10,21 +10,21 @@ export const Customer = () => {
         type="text"
         name="name"
         placeholder="name"
-        value={values.name}
+        value={formData.name}
         onChange={handleChange}
       />
       <input
         type="text"
         name="username"
         placeholder="username"
-        value={values.username}
+        value={formData.username}
         onChange={handleChange}
       />
       <input
         type="password"
         name="password"
         placeholder="password"
-        value={values.password}
+        value={formData.password}
         onChange={handleChange}
       />
       <button onClick={onSubmit}>Save</button>
