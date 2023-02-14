@@ -1,5 +1,5 @@
 import {useMutationCreateAccount} from "../useMutationCreateAccount";
-import {useForm} from "../useForm";
+import {useForm} from "../../../../hooks/useForm";
 
 export const useCustomerCreate = () => {
   const { createUser, data, loading, error } = useMutationCreateAccount();

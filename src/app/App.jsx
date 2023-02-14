@@ -3,6 +3,7 @@ import {ApolloProvider} from "@apollo/react-hooks";
 import {Pet} from "./bus/pet";
 import {Customer} from "./bus/customer";
 import {Login} from "./bus/customer/Login";
+// import {User} from "./user";
 
 export const App = () => {
 
@@ -11,6 +12,7 @@ export const App = () => {
       <Login />
       <Customer />
       <Pet />
+      {/*<User />*/}
     </ApolloProvider>
   );
 }

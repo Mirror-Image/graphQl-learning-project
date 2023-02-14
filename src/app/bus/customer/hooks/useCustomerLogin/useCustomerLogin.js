@@ -1,4 +1,4 @@
-import {useForm} from "../useForm";
+import {useForm} from "../../../../hooks/useForm";
 import {useMutationLogIn} from "../useMutationLogIn";
 
 export const useCustomerLogin = () => {
